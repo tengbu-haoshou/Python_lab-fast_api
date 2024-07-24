@@ -120,7 +120,7 @@ async def root(request: Request):
     return templates.TemplateResponse('index.html', {'request': request, 'message': 'hello world'})
 
 
-# /auth  (Return the JWT on Response Header/Body)
+# /auth (Return the JWT on Response Header/Body)
 @app.post('/auth', response_model=Token)
 async def login_for_access_token(
         response: Response, form_data: OAuth2PasswordRequestForm = Depends()):

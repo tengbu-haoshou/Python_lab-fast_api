@@ -2,7 +2,7 @@
 # Lab FastAPI
 #
 # Date    : 2024-06-29
-# Auther  : Hirotoshi FUJIBE
+# Author  : Hirotoshi FUJIBE
 # History :
 #
 
@@ -25,8 +25,8 @@ DRIVER = 'mysqlconnector'
 USER = 'root'
 HOST = 'localhost'
 PORT = '3306'
-DATABASE = 'lab_fast'
-DATABASE = f'{DIALECT}+{DRIVER}://{USER}:{password}@{HOST}:{PORT}/{DATABASE}?charset=utf-8'
+DB = 'lab_fast'
+DATABASE = f'{DIALECT}+{DRIVER}://{USER}:{password}@{HOST}:{PORT}/{DB}?charset=utf-8'
 
 CMD_DDLS = [
     text('DROP ROLE IF EXISTS lab_fast_role'),

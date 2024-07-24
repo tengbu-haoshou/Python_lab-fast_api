@@ -2,7 +2,7 @@
 # Lab FastAPI
 #
 # Date    : 2024-06-30
-# Auther  : Hirotoshi FUJIBE
+# Author  : Hirotoshi FUJIBE
 # History :
 #
 

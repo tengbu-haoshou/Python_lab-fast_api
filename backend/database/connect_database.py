@@ -2,7 +2,7 @@
 # Lab FastAPI
 #
 # Date    : 2024-06-29
-# Auther  : Hirotoshi FUJIBE
+# Author  : Hirotoshi FUJIBE
 # History :
 #
 
@@ -17,8 +17,8 @@ USER = 'lab_fast_user'
 PASSWORD = 'Asdf1234'
 HOST = 'localhost'
 PORT = '3306'
-DATABASE = 'lab_fast'
-DATABASE = f'{DIALECT}+{DRIVER}://{USER}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}?charset=utf-8'
+DB = 'lab_fast'
+DATABASE = f'{DIALECT}+{DRIVER}://{USER}:{PASSWORD}@{HOST}:{PORT}/{DB}?charset=utf-8'
 
 # Engine
 engine = create_engine(DATABASE, echo=True)    # True: SQL statement log

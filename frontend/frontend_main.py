@@ -31,7 +31,7 @@ async def root(request: Request):
     return templates.TemplateResponse('index.html', {'request': request})
 
 
-# When Manipulate [Forward] Button, [Rewind] Button, [URL] Textbox at Browser
+# When Manipulate [Rewind] [Forward] [Refresh] Button [URL] Textbox at Browser
 @app.exception_handler(404)
 async def not_found(request: Request, ex: HTTPException):    # noqa
     return templates.TemplateResponse('index.html', {'request': request})
