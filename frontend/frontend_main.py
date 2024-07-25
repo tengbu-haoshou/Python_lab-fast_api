@@ -19,6 +19,7 @@ from fastapi.exceptions import HTTPException
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 
+
 # FastAPI Settings
 app = FastAPI(docs_url=None, redoc_url=None, openapi_url=None)
 app.mount(path='/static', app=StaticFiles(directory='.\\build\\static'), name='static')
@@ -41,4 +42,4 @@ async def not_found(request: Request, ex: HTTPException):    # noqa
 if __name__ == '__main__':
 #    sys.stdout = open(os.devnull, 'w')    # Discard stdout
 #    sys.stderr = open(os.devnull, 'w')    # Discard stderr
-    uvicorn.run(app, host='0.0.0.0', port=3000)
+    uvicorn.run(app, host='0.0.0.0', port=3000, server_header=False)

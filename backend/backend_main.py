@@ -165,4 +165,4 @@ async def get_products(current_user: User = Depends(get_current_user)):    # noq
 if __name__ == '__main__':
 #    sys.stdout = open(os.devnull, 'w')    # Discard stdout
 #    sys.stderr = open(os.devnull, 'w')    # Discard stderr
-    uvicorn.run(app, host='0.0.0.0', port=3001)
+    uvicorn.run(app, host='0.0.0.0', port=3001, server_header=False)
