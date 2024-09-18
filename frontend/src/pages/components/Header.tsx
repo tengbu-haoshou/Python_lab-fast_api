@@ -17,7 +17,7 @@ function Header({logoutButton = true}) {
         <Toolbar>
           <Typography variant="caption" sx={{flexGrow: 1, display: {xs: 'none', sm: 'block'}}}><h1>Lab FastAPI</h1></Typography>
           {logoutButton && (
-            <Button variant="contained" color="primary" onClick={logout} sx={{textTransform: "none"}}>Logout</Button>
+            <Button id="logout" variant="contained" color="primary" onClick={logout} sx={{textTransform: "none"}}>Logout</Button>
           )}
         </Toolbar>
       </AppBar>

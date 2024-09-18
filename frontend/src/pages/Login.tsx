@@ -68,7 +68,7 @@ function Login() {
   return (
     <>
       <CssBaseline />
-      <Header logoutButton={false}/>
+      <Header logoutButton={false} />
       <Box
         component="form" noValidate autoComplete="off"
         display='flex'
@@ -89,7 +89,7 @@ function Login() {
           <TextField id="password" label="Password" type="password" autoComplete="" onChange={(e) => setPassword(e.target.value)} />
         </Grid>
         <Grid sx={styles}>
-          <Button variant="contained" color="primary" onClick={login} sx={{textTransform: "none"}}>Login</Button>
+          <Button id="login" variant="contained" color="primary" onClick={login} sx={{textTransform: "none"}}>Login</Button>
         </Grid>
       </Box>
       <Footer />
